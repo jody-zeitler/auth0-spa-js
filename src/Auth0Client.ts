@@ -367,7 +367,8 @@ export default class Auth0Client {
         });
 
         if (cache) {
-          return cache.access_token;
+          return cache.id_token;
+          // return cache.access_token;
         }
       }
 
@@ -433,7 +434,8 @@ export default class Auth0Client {
         daysUntilExpire: 1
       });
 
-      return authResult.access_token;
+      return authResult.id_token;
+      // return authResult.access_token;
     } catch (e) {
       throw e;
     } finally {
