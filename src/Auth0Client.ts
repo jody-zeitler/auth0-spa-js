@@ -434,6 +434,11 @@ export default class Auth0Client {
         daysUntilExpire: 1
       });
 
+      console.log('lib token')
+      console.log(authResult)
+      console.log(authResult.id_token)
+      console.log('lib token')
+
       return authResult.id_token;
       // return authResult.access_token;
     } catch (e) {
