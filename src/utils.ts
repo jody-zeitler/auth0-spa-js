@@ -213,6 +213,7 @@ export const oauthToken = async ({ baseUrl, ...options }: OAuthTokenOptions) =>
     body: JSON.stringify({
       grant_type: 'authorization_code',
       redirect_uri: window.location.origin,
+      client_secret: '5AH8Uzg-oTFd9kvwUDp8VAEfVWF5og2_p2H1dgY-cEJTOcx63jpjtrNugrdWY0_u',
       ...options
     }),
     headers: {
