@@ -4152,7 +4152,8 @@
                   audience: audience || 'default'
                 });
                 if (cache) {
-                  return [2 /*return*/, cache.access_token];
+                  return [2 /*return*/, cache.id_token];
+                  // return cache.access_token;
                 }
               }
               return [
@@ -4221,7 +4222,7 @@
               save('auth0.is.authenticated', true, {
                 daysUntilExpire: 1
               });
-              return [2 /*return*/, authResult.access_token];
+              return [2 /*return*/, authResult.id_token];
             case 6:
               e_1 = _a.sent();
               throw e_1;

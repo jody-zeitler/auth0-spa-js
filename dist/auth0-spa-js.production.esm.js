@@ -2802,7 +2802,7 @@ var dr = lr.getAll,
                     ])),
                     !a &&
                     (s = this.cache.get({ scope: i, audience: r || 'default' }))
-                      ? [2, s.access_token]
+                      ? [2, s.id_token]
                       : [4, Tr.acquireLock('auth0.lock.getTokenSilently', 5e3)]
                   );
                 case 2:
@@ -2861,7 +2861,7 @@ var dr = lr.getAll,
                     })),
                     this.cache.save(_),
                     mr('auth0.is.authenticated', !0, { daysUntilExpire: 1 }),
-                    [2, g.access_token]
+                    [2, g.id_token]
                   );
                 case 6:
                   throw o.sent();
